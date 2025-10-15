@@ -1,0 +1,19 @@
+{
+  "name": "neuro-sync-ai",
+  "version": "1.0.0",
+  "deployment": {
+    "stack": "node",
+    "targets": [
+      {
+        "name": "client",
+        "type": "web",
+        "path": "client"
+      },
+      {
+        "name": "sherwin",
+        "type": "function",
+        "path": "https://sherwin-60052075848.development.catalystserverless.in/app/index.html"
+      }
+    ]
+  }
+}

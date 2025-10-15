@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroSync AI | Voice & Chat Interface</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background" id="background"></div>
+    
+    <!-- Custom Cursors -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>NeuroSync AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">Solutions</a>
+                <a href="#">Pricing</a>
+                <a href="#">About</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Get Started</button>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="toggle-container">
+            <div class="toggle-switch">
+                <div class="toggle-slider"></div>
+                <div class="toggle-option active" data-panel="voice">
+                    <i class="fas fa-microphone"></i>
+                    Voice Meeting
+                </div>
+                <div class="toggle-option" data-panel="chat">
+                    <i class="fas fa-comments"></i>
+                    AI Chat
+                </div>
+            </div>
+        </div>
+
+        <section class="hero">
+            <h1 class="hero-title">Intelligent Conversations,<br>Elevated Experience</h1>
+            <p class="hero-subtitle">Experience the future of communication with our AI-powered voice meetings and intelligent chat system. Seamlessly switch between modes for the perfect interaction.</p>
+            
+            <div class="content-panels">
+                <!-- Voice Meeting Panel -->
+                <div class="panel active" id="voice-panel">
+                    <h2 class="panel-title">
+                        <i class="fas fa-microphone"></i>
+                        Voice Meeting with AI
+                    </h2>
+                    <p>Start a voice conversation with our advanced AI assistant. Speak naturally and get intelligent responses in real-time.</p>
+                    
+                    <div class="voice-visualizer">
+                        <div class="voice-bars" id="voice-bars"></div>
+                    </div>
+                    
+                    <div class="voice-controls">
+                        <div class="voice-btn" id="voice-toggle">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="voice-btn secondary" id="voice-settings">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="voice-btn secondary" id="voice-config">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="voice-status" id="voice-status">
+                        Ready to connect...
+                    </div>
+                </div>
+                
+                <!-- Chat Panel -->
+                <div class="panel" id="chat-panel">
+                    <h2 class="panel-title">
+                        <i class="fas fa-comments"></i>
+                        AI Chat Assistant
+                    </h2>
+                    <p>Chat with our intelligent AI assistant. Get answers, brainstorm ideas, or simply have a conversation.</p>
+                    
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="message ai">
+                                Hello! I'm your AI assistant. How can I help you today?
+                                <div class="message-time">Just now</div>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-input-container">
+                            <div class="chat-input">
+                                <textarea id="chat-textarea" placeholder="Type your message here..."></textarea>
+                                <div class="chat-actions">
+                                    <div class="chat-action-btn">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <div class="chat-action-btn">
+                                        <i class="fas fa-smile"></i>
+                                    </div>
+                                    <div class="chat-action-btn">
+                                        <i class="fas fa-magic"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="send-btn" id="send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
